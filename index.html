@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>黒猫魔女ルナの悩み相談</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="stars"></div>
+
+<main class="app">
+
+  <!-- ==================== 最初の画面 ==================== -->
+  <section id="screen-home" class="screen active">
+
+    <div class="luna-image-wrap">
+      <img src="images/luna.png" alt="黒猫魔女ルナ" class="luna-image">
+    </div>
+
+    <h1 class="app-title">黒猫魔女ルナの悩み相談</h1>
+
+    <div class="intro-box">
+      <p>はじめましてニャ。<br>
+      ルナは黒猫魔女のルナ。<br><br>
+      ちょっとした困りごとや、うまくいかないことを一緒に考えるのが好きな黒猫だニャ。<br><br>
+      ここでは、難しいことを考えなくても大丈夫。<br>
+      気になっていることを一つ選んでくれれば、ルナと一緒に考えてみるニャ。<br><br>
+      さて、今日はどんなことで困っているニャ？</p>
+    </div>
+
+    <p class="privacy-note">名前や住所などを入力する必要はないニャ。<br>気になる項目を選ぶだけで大丈夫だニャ。</p>
+
+    <button id="btn-start" class="btn-primary">🐈‍⬛ 相談してみる</button>
+
+  </section>
+
+  <!-- ==================== 相談開始画面 ==================== -->
+  <section id="screen-topics" class="screen">
+
+    <h2 class="topics-title">今日はどんなことで困っているニャ？</h2>
+
+    <div class="topics-list" id="topics-list">
+      <!-- ボタンは script.js で生成 -->
+    </div>
+
+    <button id="btn-back" class="btn-secondary">← もどる</button>
+
+  </section>
+
+  <!-- ==================== 回答画面 ==================== -->
+  <section id="screen-response" class="screen">
+
+    <div class="response-luna-wrap">
+      <img src="images/luna.png" alt="黒猫魔女ルナ" class="response-luna-image">
+    </div>
+
+    <h2 class="response-worry-title" id="response-worry-title"></h2>
+
+    <div class="response-box" id="response-box"></div>
+
+    <div class="response-buttons">
+      <button id="btn-response-more" class="btn-primary-outline">もう少し詳しく相談する</button>
+      <button id="btn-response-back" class="btn-secondary">← もどる</button>
+      <button id="btn-response-home" class="btn-secondary">最初から相談する</button>
+    </div>
+
+  </section>
+
+  <!-- ==================== 深掘り選択肢画面 ==================== -->
+  <section id="screen-followup" class="screen">
+
+    <div class="response-luna-wrap">
+      <img src="images/luna.png" alt="黒猫魔女ルナ" class="response-luna-image">
+    </div>
+
+    <h2 class="topics-title">もう少し詳しく相談してみるニャ</h2>
+
+    <div class="topics-list" id="followup-list">
+      <!-- ボタンは script.js で生成 -->
+    </div>
+
+    <button id="btn-followup-back" class="btn-secondary">← もどる</button>
+
+  </section>
+
+  <!-- ==================== 深掘り追加回答画面 ==================== -->
+  <section id="screen-followup-response" class="screen">
+
+    <div class="response-luna-wrap">
+      <img src="images/luna.png" alt="黒猫魔女ルナ" class="response-luna-image">
+    </div>
+
+    <h2 class="response-worry-title" id="followup-response-title"></h2>
+
+    <div class="response-box" id="followup-response-box"></div>
+
+    <div class="response-buttons">
+      <button id="btn-followupresponse-back" class="btn-secondary">← 選択肢に戻る</button>
+      <button id="btn-followupresponse-first" class="btn-secondary">最初の回答に戻る</button>
+      <button id="btn-followupresponse-home" class="btn-secondary">最初から相談する</button>
+    </div>
+
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
