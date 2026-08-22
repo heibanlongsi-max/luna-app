@@ -510,3 +510,4 @@ document.getElementById("btn-followupresponse-home").addEventListener("click", (
 
 // ==================== 初期化 ====================
 renderTopics();
+document.body.addEventListener('click', () => { document.getElementById('bgm').play(); }, { once: true });
